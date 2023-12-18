@@ -1,0 +1,111 @@
+{
+    "ellc": {
+		"phone_version":"L1",
+		"model_version":"v9.0",
+		"hdr":"true",
+		"resize":"false",
+        "shape_patch":[784,1040],
+        "overlap": [32, 32],
+		"snpe":{
+			"runtime": "dsp",
+			"dlcs": [
+			{
+				"dlc_name": "htp_quant_dataAllLessHL_Global_lossMask_onlyEV0_preTrainL2_20220526_EP40.dlc",
+				"input": {
+					"name": "Placeholder:0",
+					"shape": [1,784,1040,28],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				},
+				"output": {
+					"name": "g_conv10/Conv2D:0",
+					"shape": [1,784,1040,4],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				}
+			},
+			{
+				"dlc_name": "htp_quant_dataAllLessHL_Global_lossMask_onlyEV0_preTrainL2_20220526_EP40.dlc",
+				"input": {
+					"name": "Placeholder:0",
+					"shape": [1,784,1040,28],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				},
+				"output": {
+					"name": "g_conv10/Conv2D:0",
+					"shape": [1,784,1040,4],
+					"offset": 0,
+					"delta": 0.0000152590218931436538696289062500000000,
+					"encoding": "tf16"
+				}
+			}]
+		},
+
+
+		"relight_setting": [
+			{
+				"range_luxindex_start": 500.0,
+				"range_luxindex_end": 530.0,
+				"range_luxindex_start_ratio": 1.25,
+				"range_luxindex_end_ratio": 1.25
+			},
+			{
+				"range_luxindex_start": 530.0,
+				"range_luxindex_end": 545.0,
+				"range_luxindex_start_ratio": 1.25,
+				"range_luxindex_end_ratio": 1.2
+			},
+			{
+				"range_luxindex_start": 545.0,
+				"range_luxindex_end": 580.0,
+				"range_luxindex_start_ratio": 1.2,
+				"range_luxindex_end_ratio": 1.1
+			},
+			{
+				"range_luxindex_start": 580.0,
+				"range_luxindex_end": 610.0,
+				"range_luxindex_start_ratio": 1.1,
+				"range_luxindex_end_ratio": 1.0
+			}
+
+		],
+		
+		"after_relight_setting": [
+			{
+				"range_luxindex_start":500.0,
+				"range_luxindex_end":530.0,
+				"range_luxindex_start_ratio":1.2,
+				"range_luxindex_end_ratio":1.2
+			},
+			{
+				"range_luxindex_start":530.0,
+				"range_luxindex_end":580.0,
+				"range_luxindex_start_ratio":1.2,
+				"range_luxindex_end_ratio":1.15
+			},
+			{
+				"range_luxindex_start":580.0,
+				"range_luxindex_end":610.0,
+				"range_luxindex_start_ratio":1.15,
+				"range_luxindex_end_ratio":1.0
+			}
+		],
+		"Threshold":{
+			"T_brightness":60,
+			"T_dark_scene":0,
+			"T_hdr_ratio_threshold": 0.0015,
+			"T_motion_1": 35000,
+			"T_motion_2": 100000000,
+			"T_over_expose_threshold": 3500,
+			"T_over_expose_ratio": 0.4,
+			"T_first_frame_luxindex": 1000,
+			"T_apart_ratio_threshold": 10,
+			"T_apart_ratio_scale": 0.8
+		}
+	}
+}
+

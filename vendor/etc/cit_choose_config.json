@@ -1,0 +1,35 @@
+{
+    "version": "1.0",
+    "configs": [
+        {
+            "product_name": "thor",
+            "type": "main_test",
+            "path": "/vendor/etc/cit_param_config_thor.json"
+        },
+        {
+            "product_name": "loki",
+            "type": "main_test",
+            "path": "/vendor/etc/cit_param_config_loki.json"
+        },
+        {
+            "product_name": "thor",
+            "type": "auxiliary_test",
+            "path": "/vendor/etc/cit_param_config_thor.json"
+        },
+        {
+            "product_name": "loki",
+            "type": "auxiliary_test",
+            "path": "/vendor/etc/cit_param_config_loki.json"
+        },
+        {
+            "product_name": "thor",
+            "type": "auto_test",
+            "path": "/vendor/etc/cit_param_config_thor.json"
+        },
+        {
+            "product_name": "loki",
+            "type": "auto_test",
+            "path": "/vendor/etc/cit_param_config_loki.json"
+        }
+    ]
+}

@@ -1,0 +1,489 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD"],
+    "soc_id": ["291", "246", "305", "341", "356", "415", "457", "530"]
+  },
+  "tcs3408_platform":{
+    "owner": "sns_tcs3408",
+    ".config":{
+      "owner": "sns_tcs3408",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "1",
+        "data": "3"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "41"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "1",
+        "data": "154"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".config_bus4":{
+      "owner": "sns_tcs3408",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "1",
+        "data": "4"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "41"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "1",
+        "data": "154"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_tcs3408",
+      ".fac_cal":{
+        "owner": "sns_tcs3408",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      },
+      ".factory_config":{
+        "owner": "sns_tcs3408",
+        "parm1":{ "type": "flt", "ver": "1",
+          "data": "256.0"
+        },
+        "parm2":{ "type": "flt", "ver": "1",
+          "data": "128.0"
+        },
+        "parm3":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        },
+        "parm4":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        },
+        "parm5":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        },
+        "parm6":{ "type": "flt", "ver": "0",
+          "data": "64.0"
+        }
+      }
+    },
+    ".prox":{
+      "owner": "sns_tcs3408",
+      ".fac_cal":{
+        "owner": "sns_tcs3408",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "60.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "40.0"
+        }
+      }
+    },
+    ".rgb":{
+      "owner": "sns_tcs3408",
+      ".fac_cal":{
+        "owner": "sns_tcs3408",
+        "scale_l":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_h":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      }
+    },
+    ".channel":{
+      "owner": "sns_tcs3408",
+      ".fac_cal":{
+        "owner": "sns_tcs3408",
+        "data_cch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "data_rch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "data_gch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "data_bch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "data_wch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      },
+      ".fac_cal_orignal":{
+        "owner": "sns_tcs3408",
+        "data_cch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "data_rch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "data_gch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "data_bch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "data_wch":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      }
+    },
+    ".coefficient":{
+      "owner": "sns_tcs3408",
+      "0":{ "type": "flt", "ver": "6",
+        "data": "200.0"
+      },
+      "1":{ "type": "flt", "ver": "7",
+        "data": "-0.133084479950014"
+      },
+      "2":{ "type": "flt", "ver": "7",
+        "data": "0.135128001473902"
+      },
+      "3":{ "type": "flt", "ver": "7",
+        "data": "0.421113463210418"
+      },
+      "4":{ "type": "flt", "ver": "7",
+        "data": "-0.0706271447115512"
+      },
+      "5":{ "type": "flt", "ver": "4",
+        "data": "0.134167112878923"
+      },
+      "6":{ "type": "flt", "ver": "4",
+        "data": "-0.113331204542068"
+      },
+      "7":{ "type": "flt", "ver": "4",
+        "data": "-0.00574839447202891"
+      },
+      "8":{ "type": "flt", "ver": "4",
+        "data": "-0.0179360141890701"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "2",
+        "data": "0.15"
+      },
+      "11":{ "type": "flt", "ver": "1",
+        "data": "1.0"
+      }
+    },
+    ".cct_coef_hir":{
+      "owner": "sns_tcs3408",
+      "0":{ "type": "flt", "ver": "5",
+        "data": "-0.351572021355175"
+      },
+      "1":{ "type": "flt", "ver": "5",
+        "data": "0.340500376834456"
+      },
+      "2":{ "type": "flt", "ver": "5",
+        "data": "1.1889764326084"
+      },
+      "3":{ "type": "flt", "ver": "5",
+        "data": "0.0695539809465231"
+      },
+      "4":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "5":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "6":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "7":{ "type": "flt", "ver": "1",
+        "data": "1.000000"
+      },
+      "8":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "9":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "10":{ "type": "flt", "ver": "5",
+        "data": "1.36771348743537"
+      },
+      "11":{ "type": "flt", "ver": "5",
+        "data": "-1.47215419456579"
+      },
+      "12":{ "type": "flt", "ver": "5",
+        "data": "-0.128237288160392"
+      },
+      "13":{ "type": "flt", "ver": "5",
+        "data": "0.26938422381923"
+      },
+      "14":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      }
+    },
+    ".cct_coef_lir":{
+      "owner": "sns_tcs3408",
+      "0":{ "type": "flt", "ver": "3",
+        "data": "-0.258396066031922"
+      },
+      "1":{ "type": "flt", "ver": "3",
+        "data": "0.325916109332542"
+      },
+      "2":{ "type": "flt", "ver": "3",
+        "data": "1.27300728381118"
+      },
+      "3":{ "type": "flt", "ver": "3",
+        "data": "-0.177789075626826"
+      },
+      "4":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "5":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "6":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "7":{ "type": "flt", "ver": "1",
+        "data": "1.000000"
+      },
+      "8":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "9":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      },
+      "10":{ "type": "flt", "ver": "3",
+        "data": "0.948022406466819"
+      },
+      "11":{ "type": "flt", "ver": "3",
+        "data": "-1.06892078987211"
+      },
+      "12":{ "type": "flt", "ver": "3",
+        "data": "-1.16631984880016"
+      },
+      "13":{ "type": "flt", "ver": "3",
+        "data": "1.54250882152725"
+      },
+      "14":{ "type": "flt", "ver": "1",
+        "data": "0.000000"
+      }
+    },
+    ".coefficient_2":{
+      "owner": "sns_tcs3408",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "200.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.028336016469184"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "-0.0170382640072774"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.0447860167660823"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "-0.0541989560451337"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0491109074792107"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "-0.0286089497938953"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "-0.0537558243073022"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0256106851437892"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "0.2"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      }
+    },
+    ".cct_coef_hir_2":{
+      "owner": "sns_tcs3408",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "-0.462712857987754"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.422499799405614"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "1.64640818753105"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "-0.277066831133197"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "1.000000"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "0.619124619102877"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "-0.561530240912589"
+      },
+      "12":{ "type": "flt", "ver": "0",
+        "data": "-0.393376039653504"
+      },
+      "13":{ "type": "flt", "ver": "0",
+        "data": "0.357128076576373"
+      },
+      "14":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      }
+    },
+    ".cct_coef_lir_2":{
+      "owner": "sns_tcs3408",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "-0.143692240912498"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.275960326583273"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "1.13799298180904"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "-0.237191931843611"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "1.000000"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "-0.0716290027403828"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "-0.128540315027843"
+      },
+      "12":{ "type": "flt", "ver": "0",
+        "data": "0.0793798667662351"
+      },
+      "13":{ "type": "flt", "ver": "0",
+        "data": "1.48968949725566"
+      },
+      "14":{ "type": "flt", "ver": "0",
+        "data": "0.000000"
+      }
+    },
+    ".flicker_para":{
+      "owner": "sns_tcs3408",
+      "fd_atime":{ "type": "flt", "ver": "1",
+        "data": "500.0"
+      },
+      "fd_init_gain":{ "type": "flt", "ver": "1",
+        "data": "128.0"
+      },
+      "reserve_0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "reserve_1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "reserve_2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    }
+  }
+}

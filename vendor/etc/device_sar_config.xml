@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+listeners is a statues set,if corresponding position is 1, that mean reg this listener.
+    Now, contain the listener is:
+    receiver,wifi_spot,bluetooth,bluetooth_pan,sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb
+
+    1: need to reg, 0 : don`t reg
+    like for J18 device, listeners that need to reg is:  11111111110
+    like for J3S device, listeners that need to reg is:  11111111100
+    like for J1/J2 device, listeners that need to reg is 11111011000
+
+dsiMap?
+    1. F mean NA,the other state is corresponding listener value.
+    2. wifi_spot,bluetooth,bluetooth_pan is one state: hotSpot.
+
+    receiver,hotSpot,sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb
+
+-->
+
+<SarDsiConfig>
+    <!-- only use for CN -->
+    <deviceSarConfig device_name="thor">
+        <!-- <prop prop_name="persist.vendor.radio.dynamic_sar">1</prop> -->
+        <prop prop_name="ro.boot.hwc">CN</prop>
+        <prop prop_name="ro.product.mod_device">thor</prop>
+        <!-- receiver,hotSpot(wifi_spot,(bluetooth,bluetooth_pan)),sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb -->
+        <listeners>10000000100</listeners>
+        <dsimap value="10">1</dsimap>
+        <dsimap value="00">4</dsimap>
+        <dsimap value="F1">6</dsimap>
+    </deviceSarConfig>
+    <deviceSarConfig device_name="thor">
+        <!-- <prop prop_name="persist.vendor.radio.dynamic_sar">1</prop> -->
+        <prop prop_name="ro.boot.hwc">CN</prop>
+        <prop prop_name="ro.product.mod_device">thor_8475</prop>
+        <!-- receiver,hotSpot(wifi_spot,(bluetooth,bluetooth_pan)),sarsensor1,sarsensor2,mcc,wifi,cable,hall,usb -->
+        <listeners>10000000100</listeners>
+        <dsimap value="10">1</dsimap>
+        <dsimap value="00">4</dsimap>
+        <dsimap value="F1">6</dsimap>
+    </deviceSarConfig>
+</SarDsiConfig>
